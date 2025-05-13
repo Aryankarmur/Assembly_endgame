@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 20px;
+  background-color: #262626;
+  color: #d9d9d9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header {
+  padding-bottom: 1rem;
+  display: grid;
+  place-items: center;
+  gap: 13px;
+}
+header h1 {
+  color: #f9f4da;
+}
+header p {
+  text-align: center;
+  color: #8e8e8e;
+  max-width: 350px;
+}
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+main .status-sec {
+  width: 100%;
+  max-width: 20rem;
+  height: 100%; 
+  min-height: 4rem;
+  padding-block: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 5px;
+  color: #f9f4da;
+}
+.win{
+  background-color: #10a95b;
+}
+.lost{
+  background-color: #ba2a2a;
+}
+.wrongGuess{
+  background-color: #7a5ea7;
+
+}
+main .aslang {
+  max-width: 28rem;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+ 
+}
+ main .aslang span{
+    padding: 3px;
+    border: none;
+    border-radius: 2px;
+ }
+  main .aslang .lost::before{
+    content: "💀";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1.5px;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+
+ main .inputField {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+main .inputField span{
+  min-width: 4rem;
+  min-height: 4rem;
+  text-align: center;
+   padding: 1.3rem;
+   background-color: #00000031;
+   border-bottom:2px solid #000000bf;
+ }
+
+main .inputField .missed-word{
+  color: #ba2a2a;
+}
+
+main .keybord {
+  margin-top: 2rem;
+    min-width: 20rem;
+    max-width: 30rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+main .keybord button {
+  padding: 13px 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(255, 213, 0);
+  cursor: pointer;
+}
+main .keybord .isin{
+  background-color: green;
+}
+main .keybord .isnot{
+  background-color: red;
+}
+main .keybord .disable{
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+main .new_game-sec{
+  padding: 2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .new_game-sec .new_game-btn{
+  width: 14rem;
+  height: 3rem;
+  background-color: aqua;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
